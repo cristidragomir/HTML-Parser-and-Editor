@@ -1,0 +1,34 @@
+Dragomir Constantin-Cristian
+314CB
+
+Implementarea pentru tema 3 SD
+
+Ne folosim de functia ajutatoare parse_content pentru a face operatiunile
+necesare pentru realizarea corecta a arborelui. Totodata, se mai fac
+operatiuni suplimentare pentru a se tine cont de toate caracterele (tipul
+unui tag sa fie complet, legaturile catre arbori sa fie corespunzatoare).
+
+Dupa memorarea arborelui se genereaza id-urile pentru fiecare nod.
+
+Ulterior se citesc comenzile din fisierul de comenzi. Se proceseaza
+cate una pe rand. Se fac anumite modificari ale sirului de caractere
+astfel incat sa preluam ceea ce este esential.
+
+Pentru functia de stergere recursiva se va tine cont de nodul anterior
+nodului de sters. In functie de selectorul din comanda se apeleaza
+o functie specializata care realizeaza stergerea.
+
+Dupa stergerea efectiva se genereaza id-uri noi.
+
+Pentru functia de adaugare se cauta nodul dupa id si se insereaza
+in lista de copii un nou nod cu caracteristicile din comanda.
+
+Pentru modificarea stilului se realizeaza o functie care poate
+opera in doua moduri: alipire sau suprascriere
+
+In functie de selectorul ales, se realizeaza o cautare aferenta
+a nodurilor, urmand ca ulterior sa se faca modificarea efectiva
+a stilului curent al unui anumit tag
+
+Functia de formatare afiseaza intr-un fisier de iesire codul
+scris conform regulilor temei.
